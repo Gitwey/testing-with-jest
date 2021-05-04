@@ -1,0 +1,19 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "A jest + npm lab session",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gitwey/testing-with-jest.git"
+  },
+  "author": "Axel Holm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gitwey/testing-with-jest/issues"
+  },
+  "homepage": "https://github.com/Gitwey/testing-with-jest#readme"
+}
