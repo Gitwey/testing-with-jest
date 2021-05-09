@@ -23,10 +23,18 @@ test('The stack should be empty in the beginning', async () => {
 	expect(stack).toEqual("n/a");
 });
 
+describe('Clicking "Vad finns överest på stacken?" without any items', () => {
+	it('should return undefined', async () => {
+		let peek = await driver.findElement(By.id('peek'));
+		let stack = await driver.findElement(By.id('top_of_stack')).getText();
+		expect(stack).toEqual("undefined");
+	});
+
+});
+
 describe('Clicking "Pusha till stacken"', () => {
 	it('should open a prompt box', async () => {
 		let push = await driver.findElement(By.id('push'));
-		await push.click();
 		let alert = await driver.switchTo().alert();
 		await alert.sendKeys("Bananer");
 		await alert.accept();
