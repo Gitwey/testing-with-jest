@@ -26,6 +26,7 @@ test('The stack should be empty in the beginning', async () => {
 describe('Clicking "Vad finns överest på stacken?" without any items', () => {
 	it('should return undefined', async () => {
 		let peek = await driver.findElement(By.id('peek'));
+    await push.click();
 		let stack = await driver.findElement(By.id('top_of_stack')).getText();
 		expect(stack).toEqual("undefined");
 	});

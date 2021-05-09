@@ -23,5 +23,5 @@ test('peek on stack with two elements - pop top element and return the other', (
     stack.push("No")
     stack.pop("No")
     expect(stack.peek()).toBeDefined();
-    expect(stack.peek()).toBe("No")
+    expect(stack.peek()).toBe("Yes")
 });
